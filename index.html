@@ -4,10 +4,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="free-educational-responsive-web-template-webEdu">
-	<meta name="author" content="webThemez.com">
+	
+	
 	<title>Savedoc</title>
-	<link rel="favicon" href="Quiz/Images/favicon.png">
+	
 	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 	<link rel="stylesheet" href="Quiz/css/bootstrap.min.css">
 	<link rel="stylesheet" href="Quiz/css/font-awesome.min.css"> 
@@ -17,13 +17,13 @@
 	
 </head>
 <body>
-	
+	<!-- navbar collapse -->
 	<div class="navbar navbar-inverse">
 		<div class="container">
 			<div class="navbar-header">
 				
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-				<a class="navbar-brand" href="index.html">
+				
 					
 			</div>
 			<div class="navbar-collapse collapse">
@@ -36,10 +36,10 @@
 
 				</ul>
 			</div>
-			<!--/.nav-collapse -->
+			
 		</div>
 	</div>
-	<!-- /.navbar -->
+	
 
 	<!-- Header -->
 	<header id="head">
@@ -68,8 +68,14 @@
 	
       <section class="container">
       <div class="row">
-      	<div class="col-md-8"><div class="title-box clearfix "><h2 class="title-box_primary">Electronic document management</h2></div> 
-        <p><span>A digital revolution is underway : at the office, on the go, or telework. Archive, share, protect, verify and sign documents.
+      	<div class="col-md-8"><div class="title-box clearfix "><h2 style="background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;">Electronic document management</h2></div> 
+        <p style="font-size: 16px;
+		line-height: 1.6;
+		color: #333;"><span>Here you can upload and manage  all your documents in a free and secure way
 			</p>
        
           
@@ -81,11 +87,11 @@
   </div>
 </div>
 			
-			<!--CLEAR FLOATS-->
+			
 		</div>
 		
 
-	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	
 	<script src="Quiz/js/modernizr-latest.js"></script> 
 	<script type='text/javascript' src='Quiz/js/jquery.min.js'></script>
     <script type='text/javascript' src='Quiz/js/fancybox/jquery.fancybox.pack.js'></script>
@@ -115,6 +121,42 @@
 		});
       
 	</script>
+	 <form action="upload" method="post" enctype="multipart/form-data" style=" max-width: 600px;
+	 margin: 20px auto;
+	 padding: 20px;
+	 background-color: #fff;
+	 border-radius: 8px;
+	 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <label for="file" style=" display: block;
+		margin-bottom: 10px;">Add a file:</label>
+        <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png, .pdf" required style="margin-bottom: 20px;">
+        
+        <button type="submit" style="background-color: rgb(70, 105, 162);
+		color: #fff;
+		padding: 10px 15px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;">Upload File</button>
+    </form>
+	<div id="delete-section">
+        <form action="delete.php" method="post" style=" max-width: 600px;
+		margin: 20px auto;
+		padding: 20px;
+		background-color: #fff;
+		border-radius: 8px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <label for="deleteFileName" style=" display: block;
+			margin-bottom: 10px;" >Enter the file name to delete:</label>
+            <input type="text" id="deleteFileName" name="deleteFileName" required style="margin-bottom: 20px;">
+            
+            <button type="submit" style="background-color: rgb(70, 105, 162);
+			color: #fff;
+			padding: 10px 15px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;">Delete File</button>
+        </form>
+    </div>
 <footer>
 	<div id="footer">
 	  <div class="contact">
@@ -123,9 +165,9 @@
 		<br> 
 		<h3>Contact</h3>
 		<address>
-		  <p><b>Address:</b> Wellington Road, Street 32. San Francisco</p>
-		  <p><b>Phone:</b> Wellington Road, Street 32. San Francisco</p>
-		  <p><b>Hours</b> 10:00 - 18:00. Mon - Sat</p>
+		  <p><b>Address :</b> Ariana  </p>
+		  <p><b>Phone :</b> +216 72555333</p>
+		  <p><b>Hours :</b> 10:00 - 18:00. Mon - Sat</p>
 		</address>
 		<h3>Follow Us</h3>
 		<br> 
@@ -141,7 +183,6 @@
 		<h3>About</h3>
 		<br> 
 		<a href="#">About Us</a>
-		<a href="#">Delivery Information</a>
 		<a href="#">Privacy Policy</a>
 		<a href="#">Terms & Conditions</a>
 		<a href="#">Contact Us</a>
@@ -150,18 +191,21 @@
 		<h3>My account</h3>
 		<br> 
 		<a href="#">Sign In</a>
-		<a href="#">View Cart</a>
-		<a href="#">My Wishlist</a>
-		<a href="#">Track My Order</a>
+		<a href="#">My Documents</a>
+		<a href="#">History</a>
 		<a href="#">Help</a>
 	  </div>
+	 
 	  <div class="install">
 		<h3>Install App</h3>
 		<br> 
 		<p>From App Store or Google Play</p>
-		
+		<div class="download">
+            <a href="#"><img src=" F:\Savedoc\savedoc\Quiz\Images\app.jpg" alt=""></a>
+            <a href="#"><img src="F:\Savedoc\savedoc\Quiz\Images\play.jpg" alt=""></a>
+          </div>
 		<p>Secured Payment Gateways</p>
-		<img src="images/pay/pay.png" alt="">
+		<img src="F:\Savedoc\savedoc\Quiz\Images\pay.png" alt="">
 	  </div>
 	  
 	</div>

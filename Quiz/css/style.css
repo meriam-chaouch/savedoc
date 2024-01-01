@@ -6,11 +6,12 @@ Licence: Creative Commons Attribution 3.0** - http://creativecommons.org/license
 */
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700,500);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
 body {
 	font-family: 'Lato', sans-serif;
 	font-weight: normal;
 	color: #727272;
-	background: #F1F1F1;
+	background: #e6e6e6;
 	font-size: 14px;
 }
 
